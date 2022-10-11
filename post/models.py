@@ -12,7 +12,7 @@ class Post(models.Model):
     verbose_name_plural =("Posts")
 
   def __str__(self):
-    return self.name
+    return self.title
 
   def get_absoluter_url(self):
     return revers("Post_detail" ,kwart ={"pk":self.pk} )
